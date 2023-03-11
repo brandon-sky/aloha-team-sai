@@ -1,9 +1,25 @@
 import streamlit as st
 
 
+def meta_info():
+    st.set_page_config(
+    page_title="#AlohaTeamSai",
+    page_icon="🍍",
+    # layout="wide",
+    # initial_sidebar_state="expanded",
+    menu_items={
+        # 'Get Help': 'https://www.extremelycoolapp.com/help',
+        # 'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "Lord have mercy. ChatGPT was the main contributor."
+    }
+)
+    return 
+
+
 def main():
+    meta_info()
+    st.image("images/kaneohe.jpg")
     st.title("🍍 Aloha liebe Freunde & Familie")
-    st.image()
     st.subheader("Herzlich Willkommen auf der Hochzeitswebsite!")
     st.markdown("""
     
@@ -18,8 +34,10 @@ def main():
 
     Also, macht es euch gemütlich und erkundet die Website! 
     
-    Wir können es kaum erwarten, euch auf Hawaii begrüßen zu dürfen.  
-    Monika & Brandon
+    Wir können es kaum erwarten, euch auf Hawaii begrüßen zu dürfen. 
+
+    Mahalo,   
+    **Monika & Brandon**
     """)
     return
 
