@@ -12,7 +12,7 @@ def trail_olomana():
     return
 
 def trail_pillbox():
-    with open("texts/trail_olomana.md", "r") as file:
+    with open("texts/trail_pillbox.md", "r") as file:
         text = file.read()
 
     st.title("Lanikai Pillbox Hike")

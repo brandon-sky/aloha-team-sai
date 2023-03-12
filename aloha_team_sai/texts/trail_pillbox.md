@@ -1,0 +1,3 @@
+- Eine kurze, aber herausfordernde Wanderung mit atemberaubendem Blick auf die malerische Bucht von Lanikai.
+- Die Wanderung ist 1,5 km lang und dauert etwa 1 Stunde.
+- Auf dem Gipfel können Sie einen 360-Grad-Blick auf die Umgebung genießen.
