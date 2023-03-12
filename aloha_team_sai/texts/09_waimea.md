@@ -1,0 +1,9 @@
+Ein Tagesausflug zum Waimea Beach auf der North Shore ist eine großartige Möglichkeit, um alle aus Deutschland kennenzulernen und einen unvergesslichen Tag am Strand zu verbringen.
+
+Waimea Beach ist bekannt für seine herrlichen Wellen und ist ein beliebter Spot für Surfer aus aller Welt. Hier kannst du dich im Meer abkühlen, im Sand spazieren gehen und die atemberaubende Landschaft genießen. Außerdem gibt es hier einen beeindruckenden Felsen namens Waimea Rock, von dem man ins Wasser springen kann und der als Sprungturm dient.
+
+Eddie Aikau war ein berühmter hawaiianischer Lifeguard und Surfer, der hier am Waimea Beach arbeitete. Er gilt als einer der besten Surfers seiner Zeit und ist bekannt für seine Heldentaten, bei denen er immer wieder sein Leben aufs Spiel setzte, um andere zu retten. Sein Motto lautet: "Eddie Would Go", was bedeutet, dass er immer bereit war, alles zu tun, um andere zu retten.
+
+Auf dem Weg zum Waimea Beach kannst du auch beim Giovanni Shrimp Truck (je nachdem von wo ihr anreist [Kamehameha Hwy](https://goo.gl/maps/VUQ5u5wDesoCknwi7), [Haleiwa](https://goo.gl/maps/G4WwBKipGV8rubgg6)) vorbeifahren und ein leckeres Shrimp-Gericht genießen. Giovanni Shrimp Truck ist bekannt für seine köstlichen Shrimps und bietet eine große Auswahl an Meeresfrüchten.
+
+Zusammen am Waimea Beach zu verbringen, ist eine großartige Möglichkeit, um die Schönheit von O'ahu zu genießen, die Vergangenheit und Kultur von Hawaii kennenzulernen, neue Freundschaften zu knüpfen und die Hochzeitsgesellschaft vor der eigentlichen Hochzeit besser kennenzulernen. Lass uns den Mut und die Abenteuerlust von Eddie Aikau auf uns wirken lassen und einen unvergesslichen Tag am Strand verbringen.

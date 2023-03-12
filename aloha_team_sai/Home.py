@@ -6,7 +6,7 @@ def meta_info():
     page_title="#AlohaTeamSai",
     page_icon="🍍",
     # layout="wide",
-    # initial_sidebar_state="expanded",
+    initial_sidebar_state="expanded",
     menu_items={
         # 'Get Help': 'https://www.extremelycoolapp.com/help',
         # 'Report a bug': "https://www.extremelycoolapp.com/bug",
@@ -19,8 +19,7 @@ def meta_info():
 def main():
     meta_info()
     st.image("images/kaneohe.jpg")
-    st.title("🍍 Aloha liebe Freunde & Familie")
-    st.subheader("Herzlich Willkommen auf der Hochzeitswebsite!")
+    st.title("🌺 Aloha Famile & Freunde")
     st.markdown("""
     
     Wir freuen uns, dass ihr hier seid, um uns auf unserer Reise nach O'ahu, Hawaii zu begleiten.
@@ -39,6 +38,7 @@ def main():
     Mahalo,   
     **Monika & Brandon**
     """)
+    st.subheader("#AlohaTeamSai!")
     return
 
 
