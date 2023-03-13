@@ -26,11 +26,24 @@ def trail_pillbox():
     st.markdown(body=text)
     return
 
+def trail_haiku():
+    with open("texts/trail_haiku.md", "r") as file:
+        text = file.read()
+
+    st.title("Stairways to Heaven")
+    st.write("(Haiku Trail)")
+    st.image("images/stairways_to_heaven.jpg", caption="Stairways to Heaven")
+    st.markdown(body=text)
+    st.image("images/stairways_to_heaven_3.jpg", caption="Auf dem Rückweg")
+    return
+
 def main():
     with st.expander(label="O'ahu - Olomana Hike (Jungle)"):
         trail_olomana()
     with st.expander(label="O'ahu - Pillbox Hike (Ocean View)"):
         trail_pillbox()
+    with st.expander(label="O'ahu - Stairways to Heaven (Sunrise View)"):
+        trail_haiku()
     return 
 
 if __name__ == "__main__":
