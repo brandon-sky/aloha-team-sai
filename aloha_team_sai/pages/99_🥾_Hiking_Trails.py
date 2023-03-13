@@ -37,6 +37,17 @@ def trail_haiku():
     st.image("images/stairways_to_heaven_3.jpg", caption="Auf dem Rückweg")
     return
 
+def trail_maunawili():
+    with open("texts/trail_maunawili.md", "r") as file:
+        text = file.read()
+
+    st.title("Maunawili Falls Hike")
+    # st.write("(Haiku Trail)")
+    st.image("images/maunawili_falls.jpg", caption="Das Ende der Wanderung")
+    st.markdown(body=text)
+    st.image("images/maunawili_falls_2.jpg", caption="Mitten im Regenwald.")
+    return
+
 def main():
     with st.expander(label="O'ahu - Olomana Hike (Jungle)"):
         trail_olomana()
@@ -44,6 +55,8 @@ def main():
         trail_pillbox()
     with st.expander(label="O'ahu - Stairways to Heaven (Sunrise View)"):
         trail_haiku()
+    with st.expander(label="O'ahu - Maunawili Falls Hike (Waterfall)"):
+        trail_maunawili()
     return 
 
 if __name__ == "__main__":
