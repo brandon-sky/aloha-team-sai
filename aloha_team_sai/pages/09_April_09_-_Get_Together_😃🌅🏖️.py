@@ -1,5 +1,5 @@
 import streamlit as st
-
+from Home import meta_info
 
 def waimea():
     with open("texts/09_waimea.md", "r") as file:
@@ -23,6 +23,7 @@ def waimea():
     return
 
 def main():
+    meta_info()
     waimea()
     return 
 

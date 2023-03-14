@@ -1,4 +1,5 @@
 import streamlit as st
+from Home import meta_info
 
 def trail_olomana():
     with open("texts/trail_olomana.md", "r") as file:
@@ -49,6 +50,7 @@ def trail_maunawili():
     return
 
 def main():
+    meta_info()
     with st.expander(label="O'ahu - Olomana Hike (Jungle)"):
         trail_olomana()
     with st.expander(label="O'ahu - Pillbox Hike (Ocean View)"):

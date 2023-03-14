@@ -1,4 +1,5 @@
 import streamlit as st
+from Home import meta_info
 
 
 def zippys():
@@ -24,6 +25,7 @@ def zippys():
     return
 
 def main():
+    meta_info()
     zippys()
     return 
 

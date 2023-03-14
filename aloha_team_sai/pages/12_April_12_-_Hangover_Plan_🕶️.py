@@ -1,5 +1,5 @@
 import streamlit as st
-
+from Home import meta_info
 
 def kailua():
     with open("texts/12_kailua.md", "r") as file:
@@ -23,6 +23,7 @@ def kailua():
     return
 
 def main():
+    meta_info()
     kailua()
     return 
 
