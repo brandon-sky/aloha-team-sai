@@ -17,7 +17,7 @@ def meta_info(side_bar:bool = False):
 
 
 def main():
-    meta_info()
+    meta_info(side_bar=True)
     st.image("images/kaneohe.jpg")
     st.title("🌺 Aloha Famile & Freunde")
     st.markdown("""
