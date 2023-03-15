@@ -22,3 +22,5 @@ jobs:
            cd aloha-team-sai/;
            git pull;
            docker build -t aloha-team-sai .
+           
+           
