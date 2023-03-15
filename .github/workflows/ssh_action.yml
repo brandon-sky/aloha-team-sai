@@ -8,18 +8,14 @@ on:
 jobs:
   run_ssh_script:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Run SSH script
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
-          port: ${{ secrets.SSH_PORT }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }} "if [ ! -f ~/text_file.txt ]; then touch ~/text_file.txt; fi; echo \"$(date '+%Y-%m-%d %H:%M:%S') github action made me do this\" >> ~/text_file.txt"
+            ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "if [ ! -f ~/text_file.txt ]; then touch ~/text_file.txt; fi; echo \"$(date '+%Y-%m-%d %H:%M:%S') github action made me do this\" >> ~/text_file.txt"
