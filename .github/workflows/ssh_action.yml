@@ -20,3 +20,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: 
            git clone git@github.com:brandon-sky/aloha-team-sai.git;
+           echo "I was here" >> log.txt
