@@ -16,9 +16,8 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: 
-           rm ~/text_file.txt;
-           rm ~/text_file_2.txt;
-           touch ~/text_file_22.txt;
+           rm ~/text_file_22.txt;
+           touch ~/text_file.txt;
