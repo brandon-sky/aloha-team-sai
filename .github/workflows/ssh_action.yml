@@ -18,4 +18,5 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          script: whoami
+          script: 
+           ssh ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} -p ${{ secrets.SSH_PORT }} "if [ ! -f ~/text_file.txt ]; then touch ~/text_file.txt; fi; echo \"$(date '+%Y-%m-%d %H:%M:%S') github action made me do this\" >> ~/text_file.txt"
