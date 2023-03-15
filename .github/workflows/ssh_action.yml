@@ -20,3 +20,4 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: 
            touch ~/text_file.txt
+           touch ~/text_file_2.txt
