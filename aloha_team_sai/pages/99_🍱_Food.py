@@ -69,6 +69,11 @@ def main():
             path_picture="images/food_luau_stew.jpg",
             caption="Iss jetzt.",
             title="Luau Stew")
+        st.markdown("---")
+        post(
+            path_text="texts/food_poi.md",
+            path_picture="images/food_poi.jpg",
+            caption="Von Grau bis Violett.")
 
     
     return 
