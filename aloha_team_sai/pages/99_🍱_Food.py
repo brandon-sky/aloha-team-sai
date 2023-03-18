@@ -63,6 +63,12 @@ def main():
             path_picture="images/food_lomi_lomi_salmon.jpg",
             caption="Fresh. Fresh. Ya.",
             title="Lomi Lomi Salmon")
+        st.markdown("---")
+        post(
+            path_text="texts/food_luau_stew.md",
+            path_picture="images/food_luau_stew.jpg",
+            caption="Iss jetzt.",
+            title="Luau Stew")
 
     
     return 
