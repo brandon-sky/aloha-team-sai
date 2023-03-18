@@ -51,6 +51,12 @@ def main():
             path_picture="images/food_kalua_pork.jpg",
             caption="Some fine plate with kalua pork",
             title="Kālua Pork")
+        st.markdown("---")
+        post(
+            path_text="texts/food_lau_lau.md",
+            path_picture="images/food_lau_lau.jpg",
+            caption="Kohlrouladen, Yaprak sarma, Dolmadakia, Lau Lau - same same but different. ",
+            title="Lau Lau")
 
     
     return 
