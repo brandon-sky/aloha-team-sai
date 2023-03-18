@@ -39,12 +39,18 @@ def main():
             path_picture="images/food_hawaiian_fruits.jpg", 
             caption="Hawaiian Fruits.")
     
-    with st.expander(label="Hawaiianische Gerichten"):
+    with st.expander(label="Hawaiianische Gerichte"):
         post(
             path_text="texts/food_huli_huli_chicken.md",
-            path_picture="images/huli_huli_chicken.jpg",
+            path_picture="images/food_huli_huli_chicken.jpg",
             caption="Some fine plate with huli huli chicken",
             title="Huli Huli Chicken")
+        st.markdown("---")
+        post(
+            path_text="texts/food_kalua_pork.md",
+            path_picture="images/food_kalua_pork.jpg",
+            caption="Some fine plate with kalua pork",
+            title="Kālua Pork")
 
     
     return 
