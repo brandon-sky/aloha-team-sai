@@ -75,7 +75,17 @@ def main():
             path_picture="images/food_poi.jpg",
             caption="Von Grau bis Violett.")
 
-    
+    with st.expander(label="Lokale Gerichte"):
+        st.write("""Dies sind natürlich auch hawaiianische Gerichte, 
+                    doch im Gegensatz zu den vorherigen Gerichten, haben diese Gerichte einen Einfluss aus einer anderen Kultut. 
+                    Diese Speisen sind ein Indiz das Hawai'i als Meltingpot des Pazifiks funktioniert. """
+                 )
+        post(
+            path_text="texts/food_acai.md",
+            path_picture="images/food_acai.jpg",
+            caption="Fresh Acai Bowl from Haleiwa Bowls.",
+            title="Acai Bowls")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
