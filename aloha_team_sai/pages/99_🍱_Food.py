@@ -86,6 +86,12 @@ def main():
             caption="Fresh Acai Bowl from Haleiwa Bowls.",
             title="Acai Bowls")
         st.markdown("---")
+        post(
+            path_text="texts/food_chicken_long_rice.md",
+            path_picture="images/food_chicken_long_rice.jpg",
+            caption="Fine clean food.",
+            title="Chicken Long Rice")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
