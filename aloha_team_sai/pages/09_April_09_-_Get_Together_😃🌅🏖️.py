@@ -19,7 +19,7 @@ def waimea():
         """)
     st.image("images/sunset_beach.jpg", caption="Sunset Beach.")
     st.markdown(body=text)
-    st.image("images/shrimps.jpg", caption="Giovanni's Shrimp Truck")
+    st.image("images/food_garlic_shrimp.jpg", caption="Giovanni's Shrimp Truck")
     return
 
 def main():
