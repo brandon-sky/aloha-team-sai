@@ -127,6 +127,12 @@ def main():
             caption="Ono Plate Lunch.",
             title="Plate Lunch")
         st.markdown("---")
+        post(
+            path_text="texts/food_poke.md",
+            path_picture="images/food_poke.jpg",
+            caption="Ahi (Thunfisch) Poke - meine Lieblingsvariante.",
+            title="Poke")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
