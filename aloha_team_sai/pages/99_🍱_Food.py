@@ -139,6 +139,12 @@ def main():
             caption="Eggs & Portugues Sausauge.",
             title="Portugues Sausauge")
         st.markdown("---")
+        post(
+            path_text="texts/food_saimin.md",
+            path_picture="images/food_saimin.jpg",
+            caption="Mit Ramen vergleichbar/verwechselbar.",
+            title="Saimin")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
