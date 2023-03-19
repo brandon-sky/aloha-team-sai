@@ -40,6 +40,10 @@ def main():
             caption="Hawaiian Fruits.")
     
     with st.expander(label="Hawaiianische Gerichte"):
+        with open(file="texts/food_hawaiian.md", mode="r") as file:
+            text_hawaiian = file.read()
+        st.markdown(text_hawaiian)
+
         post(
             path_text="texts/food_huli_huli_chicken.md",
             path_picture="images/food_huli_huli_chicken.jpg",
