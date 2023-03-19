@@ -121,6 +121,12 @@ def main():
             path_picture="images/food_manapua.jpg",
             caption="Manapua.")
         st.markdown("---")
+        post(
+            path_text="texts/food_plate_lunch.md",
+            path_picture="images/food_plate_lunch.jpg",
+            caption="Ono Plate Lunch.",
+            title="Plate Lunch")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
