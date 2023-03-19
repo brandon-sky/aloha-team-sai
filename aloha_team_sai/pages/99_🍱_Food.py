@@ -157,6 +157,12 @@ def main():
             caption="Go-to Snack 24/7.",
             title="Spam Musubi")
         st.markdown("---")
+        post(
+            path_text="texts/food_pipikaula.md",
+            path_picture="images/food_pipikaula.jpg",
+            caption="Good Beef.",
+            title="Pipikaula")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
