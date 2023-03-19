@@ -133,6 +133,12 @@ def main():
             caption="Ahi (Thunfisch) Poke - meine Lieblingsvariante.",
             title="Poke")
         st.markdown("---")
+        post(
+            path_text="texts/food_portuguese_sausage.md",
+            path_picture="images/food_portuguese_sausage.jpg",
+            caption="Eggs & Portugues Sausauge.",
+            title="Portugues Sausauge")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
