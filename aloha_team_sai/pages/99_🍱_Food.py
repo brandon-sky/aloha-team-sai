@@ -116,6 +116,11 @@ def main():
             caption="Kühlende Beilage.",
             title="Mac Salad")
         st.markdown("---")
+        post(
+            path_text="texts/food_manapua.md",
+            path_picture="images/food_manapua.jpg",
+            caption="Manapua.")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
