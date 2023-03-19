@@ -145,6 +145,18 @@ def main():
             caption="Mit Ramen vergleichbar/verwechselbar.",
             title="Saimin")
         st.markdown("---")
+    
+    with st.expander(label="Snacks"):
+        # st.write("""Dies sind natürlich auch hawaiianische Gerichte, 
+        #             doch im Gegensatz zu den vorherigen Gerichten, haben diese Gerichte einen Einfluss aus einer anderen Kultut. 
+        #             Diese Speisen sind ein Indiz das Hawai'i als Meltingpot des Pazifiks funktioniert. """
+        #          )
+        post(
+            path_text="texts/food_spam_musubi.md",
+            path_picture="images/food_spam_musubi.jpg",
+            caption="Go-to Snack 24/7.",
+            title="Spam Musubi")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
