@@ -92,6 +92,12 @@ def main():
             caption="Fine clean food.",
             title="Chicken Long Rice")
         st.markdown("---")
+        post(
+            path_text="texts/food_fish_tacos.md",
+            path_picture="images/food_fish_tacos.jpg",
+            caption="Yep tacos and fries.",
+            title="Fish Tacos")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
