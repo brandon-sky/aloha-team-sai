@@ -40,6 +40,10 @@ def main():
             caption="Hawaiian Fruits.")
     
     with st.expander(label="Hawaiianische Gerichte"):
+        with open(file="texts/food_hawaiian.md", mode="r") as file:
+            text_hawaiian = file.read()
+        st.markdown(text_hawaiian)
+
         post(
             path_text="texts/food_huli_huli_chicken.md",
             path_picture="images/food_huli_huli_chicken.jpg",
@@ -75,7 +79,94 @@ def main():
             path_picture="images/food_poi.jpg",
             caption="Von Grau bis Violett.")
 
+    with st.expander(label="Lokale Gerichte"):
+        st.write("""Dies sind natürlich auch hawaiianische Gerichte, 
+                    doch im Gegensatz zu den vorherigen Gerichten, haben diese Gerichte einen Einfluss aus einer anderen Kultut. 
+                    Diese Speisen sind ein Indiz das Hawai'i als Meltingpot des Pazifiks funktioniert. """
+                 )
+        post(
+            path_text="texts/food_acai.md",
+            path_picture="images/food_acai.jpg",
+            caption="Fresh Acai Bowl from Haleiwa Bowls.",
+            title="Acai Bowls")
+        st.markdown("---")
+        post(
+            path_text="texts/food_chicken_long_rice.md",
+            path_picture="images/food_chicken_long_rice.jpg",
+            caption="Fine clean food.",
+            title="Chicken Long Rice")
+        st.markdown("---")
+        post(
+            path_text="texts/food_fish_tacos.md",
+            path_picture="images/food_fish_tacos.jpg",
+            caption="Yep tacos and fries.",
+            title="Fish Tacos")
+        st.markdown("---")
+        post(
+            path_text="texts/food_garlic_shrimp.md",
+            path_picture="images/food_garlic_shrimp.jpg",
+            caption="Nice plate of garlic shrimps from Giovanni's.",
+            title="Garlic Shrimps")
+        st.markdown("---")
+        post(
+            path_text="texts/food_loco_moco.md",
+            path_picture="images/food_loco_moco.jpg",
+            caption="Leibspeise.",
+            title="Loco Moco")
+        st.markdown("---")
+        post(
+            path_text="texts/food_mac_salad.md",
+            path_picture="images/food_mac_salad.jpg",
+            caption="Kühlende Beilage.",
+            title="Mac Salad")
+        st.markdown("---")
+        post(
+            path_text="texts/food_manapua.md",
+            path_picture="images/food_manapua.jpg",
+            caption="Manapua.")
+        st.markdown("---")
+        post(
+            path_text="texts/food_plate_lunch.md",
+            path_picture="images/food_plate_lunch.jpg",
+            caption="Ono Plate Lunch.",
+            title="Plate Lunch")
+        st.markdown("---")
+        post(
+            path_text="texts/food_poke.md",
+            path_picture="images/food_poke.jpg",
+            caption="Ahi (Thunfisch) Poke - meine Lieblingsvariante.",
+            title="Poke")
+        st.markdown("---")
+        post(
+            path_text="texts/food_portuguese_sausage.md",
+            path_picture="images/food_portuguese_sausage.jpg",
+            caption="Eggs & Portugues Sausauge.",
+            title="Portugues Sausauge")
+        st.markdown("---")
+        post(
+            path_text="texts/food_saimin.md",
+            path_picture="images/food_saimin.jpg",
+            caption="Mit Ramen vergleichbar/verwechselbar.",
+            title="Saimin")
+        st.markdown("---")
     
+    with st.expander(label="Snacks"):
+        # st.write("""Dies sind natürlich auch hawaiianische Gerichte, 
+        #             doch im Gegensatz zu den vorherigen Gerichten, haben diese Gerichte einen Einfluss aus einer anderen Kultut. 
+        #             Diese Speisen sind ein Indiz das Hawai'i als Meltingpot des Pazifiks funktioniert. """
+        #          )
+        post(
+            path_text="texts/food_spam_musubi.md",
+            path_picture="images/food_spam_musubi.jpg",
+            caption="Go-to Snack 24/7.",
+            title="Spam Musubi")
+        st.markdown("---")
+        post(
+            path_text="texts/food_pipikaula.md",
+            path_picture="images/food_pipikaula.jpg",
+            caption="Good Beef.",
+            title="Pipikaula")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":

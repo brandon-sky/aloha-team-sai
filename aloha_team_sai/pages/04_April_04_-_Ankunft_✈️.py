@@ -19,7 +19,7 @@ def zippys():
 
 
         """)
-    st.image("images/loco_moco.jpg", caption="Loco Moco - das leckerste Gericht")
+    st.image("images/food_loco_moco.jpg", caption="Loco Moco - das leckerste Gericht")
     st.markdown(body=text)
     st.image("images/chicken_katsu.jpg", caption="Chicken Katsu, das zweitleckerste Gericht")
     return
