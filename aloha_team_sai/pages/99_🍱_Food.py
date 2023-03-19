@@ -110,6 +110,12 @@ def main():
             caption="Leibspeise.",
             title="Loco Moco")
         st.markdown("---")
+        post(
+            path_text="texts/food_mac_salad.md",
+            path_picture="images/food_mac_salad.jpg",
+            caption="Kühlende Beilage.",
+            title="Mac Salad")
+        st.markdown("---")
     return 
 
 if __name__ == "__main__":
