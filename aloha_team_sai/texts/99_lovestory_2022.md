@@ -4,7 +4,7 @@
     So what ya wanna do? Let's just run, girl 
 
 Februar. Meine Familie wusste schon 2021 Bescheid und Gianni erzählte ich es auch schon. Was ich noch erledigen musste: Den Segen von Monis Familie holen und den erhielt ich sofort (: 
-Am 02. Februar waren wir zum Abendessen im CUBE und als wir das Restaurant samt nächtlichen Blick Stuttgart habe ich Moni den Hochzeitsantrag gestellt.  
+Am 2. Februar waren wir zum Abendessen im CUBE und als wir das Restaurant samt nächtlichen Blick Stuttgart für uns hatten, habe ich Moni den Hochzeitsantrag gestellt.  
 
 
 **Gorgeous**
