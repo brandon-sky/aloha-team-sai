@@ -4,7 +4,7 @@
     Save your tears for another
 
 Februar. Mein Lieblingswochenende kommt - Super Bowl Sunday. Moni ist nicht nur angefixed, sondern übernimmt aus Spaß mein Team in einer Fantasy-Football Liga und wird Champion.
-Ich bin zwiegespaltet, weil ich selbst noch die Champ geworden bin, doch gleichzeitig freut es mich, dass Moni alle zerfetzt hat. Super Bowl Halftime Show mit The Weeknd. 
+Ich bin zwiegespaltet, weil ich selbst noch nie Champ geworden bin, doch gleichzeitig freut es mich, dass Moni alle zerfetzt hat. Super Bowl Halftime Show mit The Weeknd. 
 
 
 **When we were young**
