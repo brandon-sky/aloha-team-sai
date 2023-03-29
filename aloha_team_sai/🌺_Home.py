@@ -4,6 +4,7 @@ from metrics.meta import meta_info
 from metrics.time_info import TimeBar
 from metrics.headcount import HeadCounter
 from metrics.locations import MapInformation
+from metrics.weather import WeatherInfo
 
 def main():
     meta_info(side_bar=True)
@@ -12,6 +13,9 @@ def main():
 
     with st.expander(label="Zeitinfo"):
         TimeBar()
+
+    with st.expander(label="Wetter"):
+        WeatherInfo()
 
     with st.expander(label="Where the Germans at?"):
         HeadCounter()
