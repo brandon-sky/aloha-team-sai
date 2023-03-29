@@ -1,5 +1,5 @@
 import streamlit as st
-from Home import meta_info
+from metrics.meta import meta_info
 
 def sandys():
     with open("texts/08_sandys.md", "r") as file:

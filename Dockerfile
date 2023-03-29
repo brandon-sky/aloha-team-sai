@@ -31,4 +31,4 @@ EXPOSE 8501
 WORKDIR /app/aloha_team_sai
 
 # Run the Streamlit command
-CMD ["streamlit", "run", "Home.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "🌺_Home.py", "--server.port=8501", "--server.address=0.0.0.0"]
