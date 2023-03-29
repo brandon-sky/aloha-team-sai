@@ -2,6 +2,7 @@ import streamlit as st
 
 from metrics.time_info import TimeBar
 from metrics.headcount import HeadCounter
+from metrics.locations import MapInformation
 
 def meta_info(side_bar:bool = False):
     config = {
@@ -28,6 +29,9 @@ def main():
 
     with st.expander(label="Where the Germans at?"):
         HeadCounter()
+
+    with st.expander(label="Locations"):
+        MapInformation()
 
     st.title("🌺 Aloha Famile & Freunde")
     st.markdown("""
