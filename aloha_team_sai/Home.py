@@ -1,5 +1,7 @@
 import streamlit as st
 
+from metrics.time_info import TimeBar
+from metrics.headcount import HeadCounter
 
 def meta_info(side_bar:bool = False):
     config = {
@@ -18,7 +20,15 @@ def meta_info(side_bar:bool = False):
 
 def main():
     meta_info(side_bar=True)
+
     st.image("images/kaneohe.jpg")
+
+    with st.expander(label="Zeitinfo"):
+        TimeBar()
+
+    with st.expander(label="Where the Germans at?"):
+        HeadCounter()
+
     st.title("🌺 Aloha Famile & Freunde")
     st.markdown("""
     
