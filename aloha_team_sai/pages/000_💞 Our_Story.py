@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
-from Home import meta_info
+from metrics.meta import meta_info
 
 def chapter(text_path: str, image_path: str| None = None, title:str|None = None, seprator: bool = True):
     with open(text_path, "r") as file:

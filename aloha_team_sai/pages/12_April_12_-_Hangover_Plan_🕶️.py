@@ -1,5 +1,5 @@
 import streamlit as st
-from Home import meta_info
+from metrics.meta import meta_info
 
 def kailua():
     with open("texts/12_kailua.md", "r") as file:

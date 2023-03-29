@@ -1,5 +1,5 @@
 import streamlit as st
-from Home import meta_info
+from metrics.meta import meta_info
 
 def wedding():
     with open("texts/11_wedding.md", "r") as file:

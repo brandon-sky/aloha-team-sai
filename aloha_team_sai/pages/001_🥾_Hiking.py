@@ -1,5 +1,5 @@
 import streamlit as st
-from Home import meta_info
+from metrics.meta import meta_info
 
 def trail_olomana():
     with open("texts/trail_olomana.md", "r") as file:

@@ -1,3 +1,4 @@
-latitude,longitude,Title,color,icon
-21.690725965588403,-158.02137650794043,Wedding Location,red,heart
-21.29327275080241,-157.80602595200764,Hochzeitspaar,green,home
+latitude,longitude,Title,color,icon, location
+21.690725965588403,-158.02137650794043,Wedding Location,red,heart, Haleiwa
+21.29327275080241,-157.80602595200764,Hochzeitspaar,green,home, "St. Louis Heights"
+21.27633930308899, -157.82545254603164,"Statue of Duke",blue,camera, Waikiki

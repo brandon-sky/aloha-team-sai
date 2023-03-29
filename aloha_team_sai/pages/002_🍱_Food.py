@@ -1,7 +1,7 @@
 import streamlit as st
 from typing import Optional
 
-from Home import meta_info
+from metrics.meta import meta_info
 
 def post(path_text:str, path_picture:Optional[str] = None, caption: Optional[str] = None, title: Optional[str] = None) -> None:
     with open(file=path_text, mode="r") as file:

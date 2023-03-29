@@ -1,23 +1,9 @@
 import streamlit as st
 
+from metrics.meta import meta_info
 from metrics.time_info import TimeBar
 from metrics.headcount import HeadCounter
 from metrics.locations import MapInformation
-
-def meta_info(side_bar:bool = False):
-    config = {
-        "page_title":"#AlohaTeamSai",
-        "page_icon":"🍍",
-        "menu_items":{
-            'About': "Lord have mercy. ChatGPT was the main contributor."
-            }
-    }
-    if side_bar:
-        config["initial_sidebar_state"] = "expanded"
-        
-    st.set_page_config(**config)
-    return 
-
 
 def main():
     meta_info(side_bar=True)
