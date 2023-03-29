@@ -1,0 +1,7 @@
+Ich kann es kaum erwarten, Moni nach unserer Landung die hawaiianische Küche als erstes näherzubringen und dann gemeinsam Waikiki zu erkunden. Der Stadtteil von Honolulu im Süden von O'ahu ist berühmt für seinen gleichnamigen Strand, **Waikiki Beach**, der zu den bekanntesten Stränden der Welt zählt und auf dem sich eine Statue des hawaiischen Sport-Legende [Duke Kahanamoku](https://de.wikipedia.org/wiki/Duke_Kahanamoku) befindet. Aber **Waikiki** hat noch viel mehr zu bieten als nur Sonne, Sand und Meer.
+
+Auf der Hauptgeschäftsstraße von Waikiki, der **Kalākaua Avenue**, gibt es zahlreiche Einkaufsmöglichkeiten, Restaurants und Bars. Wir können uns auf die Suche nach einem hervorragenden Lokal machen, um die hawaiianische Küche noch weiter zu erkunden und verschiedene Gerichte auszuprobieren. Vielleicht finden wir auch ein Restaurant, das [Loco Moco](https://aloha-team-sai.de/Food) und [Chicken Katsu](https://aloha-team-sai.de/Food) in einer besonders köstlichen Variante anbietet.
+
+Wenn wir genug vom Trubel auf der Kalākaua Avenue haben, können wir uns auf den Weg zum **Honolulu Zoo** machen, der sich am östlichen Ende von Waikiki befindet. Dort können wir eine Pause von der Stadt einlegen und uns die exotische Flora und Fauna ansehen.
+
+Egal, ob wir uns entscheiden, am Strand zu entspannen oder die Stadt zu erkunden, ich bin mir sicher, dass unsere Zeit in Waikiki unvergesslich sein wird. Wir können uns auf den Spuren der Königlichen Familie Hawaiis bewegen, die hier einst Surfen lernte, und die Geschichte des Stadtteils erfahren.
