@@ -14,7 +14,6 @@ big_delta = 0
 
 def HeadCounter():
     # Display the presence on the three islands in one row
-    st.write("🇩🇪 Germans on Hawai'i")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric(label="Kauai", value=kauai_presence, delta=kauai_delta)
