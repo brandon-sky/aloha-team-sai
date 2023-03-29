@@ -55,6 +55,21 @@ files = [
 ]
 
 [[package]]
+name = "branca"
+version = "0.6.0"
+description = "Generate complex HTML+JS pages with Python"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "branca-0.6.0-py3-none-any.whl", hash = "sha256:ae706fc7a88dd0296a58bb11c0cb3c6be358491a3b0abee08fe16b4db17814c0"},
+    {file = "branca-0.6.0.tar.gz", hash = "sha256:55949855214504c7583b71b9a03a84dce2e96a84027613bb53b42d04844ce24e"},
+]
+
+[package.dependencies]
+jinja2 = "*"
+
+[[package]]
 name = "cachetools"
 version = "5.3.0"
 description = "Extensible memoizing collections and decorators"
@@ -213,6 +228,27 @@ files = [
     {file = "entrypoints-0.4-py3-none-any.whl", hash = "sha256:f174b5ff827504fd3cd97cc3f8649f3693f51538c7e4bdf3ef002c8429d42f9f"},
     {file = "entrypoints-0.4.tar.gz", hash = "sha256:b706eddaa9218a19ebcd67b56818f05bb27589b1ca9e8d797b74affad4ccacd4"},
 ]
+
+[[package]]
+name = "folium"
+version = "0.14.0"
+description = "Make beautiful maps with Leaflet.js & Python"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "folium-0.14.0-py2.py3-none-any.whl", hash = "sha256:c894e2c029a8ca40e043a311978a895cefe32d746a94263f807dd7b6b2e9c679"},
+    {file = "folium-0.14.0.tar.gz", hash = "sha256:8ec44697d18f5932e0fdaee8b19da98625de4d0e72cb30ef56f9479f18e11b9f"},
+]
+
+[package.dependencies]
+branca = ">=0.6.0"
+jinja2 = ">=2.9"
+numpy = "*"
+requests = "*"
+
+[package.extras]
+testing = ["pytest"]
 
 [[package]]
 name = "gitdb"
@@ -915,6 +951,24 @@ watchdog = {version = "*", markers = "platform_system != \"Darwin\""}
 snowflake = ["snowflake-snowpark-python"]
 
 [[package]]
+name = "streamlit-folium"
+version = "0.11.1"
+description = "Render Folium objects in Streamlit"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "streamlit_folium-0.11.1-py3-none-any.whl", hash = "sha256:b8fa8e3d7715c8799d8a8b7f0d855fb944d989fc50ff3c7701eaeb010f349a50"},
+    {file = "streamlit_folium-0.11.1.tar.gz", hash = "sha256:b2cdd07f504b9fa7e7f0cd4ab8f7cd1075b6882386aed780638b5ce4d60e54bd"},
+]
+
+[package.dependencies]
+branca = "*"
+folium = ">=0.13"
+jinja2 = "*"
+streamlit = ">=1.13.0"
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -1097,4 +1151,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "babefd481c82421136c8243f3cd0988f882734b8174ec8103e217e1aa336095c"
+content-hash = "91f701bbfaa60eba179fc00816ad34d92a99aa6fd0c413db5d23b24cd831feaa"
