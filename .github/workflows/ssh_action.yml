@@ -23,8 +23,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: 
             mkdir -p ~/cert;
-            echo "${{ secrets.SSL_CERTIFICATE }}" > ~/cert/cert.cer;
-            echo "${{ secrets.SSL_PRIVATE_KEY }}" > ~/cert/key.key;
+            echo "${{ secrets.SSL_CERTIFICATE }}"|  > ~/cert/cert.cer;
+            echo "${{ secrets.SSL_PRIVATE_KEY }}"| > ~/cert/key.key;
   
   run_ssh_script:
     runs-on: ubuntu-latest
