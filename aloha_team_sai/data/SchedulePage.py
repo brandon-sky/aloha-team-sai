@@ -21,7 +21,7 @@ class ScheduleElement:
         Displays the image and the text description of the schedule element using Streamlit.
     """
     
-    def __init__(self, text_path: str, image_path: str, caption: str) -> None:
+    def __init__(self, text_path: str, image_path: str|None = None, caption: str|None = None) -> None:
         self.text_path = text_path
         self.image_path = image_path
         self.caption = caption
@@ -40,7 +40,8 @@ class ScheduleElement:
         Displays the image and the text description of the schedule element using Streamlit.
         """
         self.__get_text()
-        st.image(image=self.image_path, caption=self.caption)
+        if not self.image_path is None:
+            st.image(image=self.image_path, caption=self.caption)
         st.markdown(body=self.text)
         return 
     pass
