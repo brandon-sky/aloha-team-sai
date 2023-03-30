@@ -46,11 +46,9 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             mkdir -p ~/certs
-            scp ssl-certificate.crt ${SSH_USERNAME}@${SSH_HOST}:~/certs/
-            scp ssl-private-key.key ${SSH_USERNAME}@${SSH_HOST}:~/certs/
-        env:
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_HOST: ${{ secrets.SSH_HOST }}
+            echo "${{ secrets.SSL_CERTIFICATE }}" > ~/certs/cert.cer
+            echo "${{ secrets.SSL_PRIVATE_KEY }}" > ~/certs/key.key
+
   # copy-certificate:
   #   runs-on: ubuntu-latest
   #   steps:
