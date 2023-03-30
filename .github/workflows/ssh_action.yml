@@ -24,8 +24,10 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             mkdir -p ~/cert
-            echo ${SSL_CERTIFICATE} > ~/cert/cert.cer
-            echo ${SSL_PRIVATE_KEY} > ~/cert/key.key
+            echo ${SSL_PRIVATE_KEY}
+            echo ${SSL_CERTIFICATE}
+            # echo ${SSL_CERTIFICATE} > ~/cert/cert.cer
+            # echo ${SSL_PRIVATE_KEY} > ~/cert/key.key
         env:
           SSL_CERTIFICATE: ${{ secrets.SSL_CERTIFICATE }}
           SSL_PRIVATE_KEY: ${{ secrets.SSL_PRIVATE_KEY }}
