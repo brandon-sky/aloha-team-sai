@@ -41,7 +41,7 @@ jobs:
           script:
            cd aloha-team-sai/;
            git pull;
-           docker-compose --version;
+           docker-compose down;
           #  docker-compose down;
           #  docker-compose up -d;
           #  image_id=`docker images -q`;
