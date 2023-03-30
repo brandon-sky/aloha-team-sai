@@ -39,8 +39,8 @@ jobs:
 
       - name: Set up SSL certificate
         run: |
-          echo "${{ secrets.SSL_CERTIFICATE }}" > ssl-certificate.crt
-          echo "${{ secrets.SSL_PRIVATE_KEY }}" > ssl-private-key.key
+          echo "${{ secrets.SSL_CERTIFICATE }}" | base64 -d  > ssl-certificate.crt
+          echo "${{ secrets.SSL_PRIVATE_KEY }}" | base64 -d  > ssl-private-key.key
 
       - name: Copy SSL certificate and key to server
         run: |
