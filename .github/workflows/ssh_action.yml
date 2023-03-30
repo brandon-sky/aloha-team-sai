@@ -48,7 +48,7 @@ jobs:
            cd aloha-team-sai/;
            git pull;
            docker-compose down;
-          #  docker-compose up -d;
+           docker-compose up -d;
           #  image_id=`docker images -q`;
           #  docker build -t aloha-team-sai .;
           #  docker container stop aloha-container;
