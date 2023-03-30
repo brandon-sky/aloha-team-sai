@@ -6,26 +6,47 @@ on:
       - main
 
 jobs:
-  run_ssh_script:
+  # run_ssh_script:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v3
+  #     - name: Run SSH script
+  #       uses: appleboy/ssh-action@master
+  #       with:
+  #         host: ${{ secrets.SSH_HOST }}
+  #         username: ${{ secrets.SSH_USERNAME }}
+  #         password: ${{ secrets.SSH_PASSWORD }}
+  #         port: ${{ secrets.SSH_PORT }}
+  #         script:
+  #          cd aloha-team-sai/;
+  #          git pull;
+  #          image_id=`docker images -q`;
+  #          docker build -t aloha-team-sai .;
+  #          docker container stop aloha-container;
+  #          docker container remove aloha-container;
+  #          docker run -d -p 8501:8501 --name aloha-container aloha-team-sai;
+  #          docker image rm $image_id;
+           
+           
+  copy-certificate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Run SSH script
-        uses: appleboy/ssh-action@master
+      - name: Set up SSH connection
+        uses: webfactory/ssh-agent@v0.5.0
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
-          script:
-           cd aloha-team-sai/;
-           git pull;
-           image_id=`docker images -q`;
-           docker build -t aloha-team-sai .;
-           docker container stop aloha-container;
-           docker container remove aloha-container;
-           docker run -d -p 8501:8501 --name aloha-container aloha-team-sai;
-           docker image rm $image_id;
-           
-           
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Set up SSL certificate
+        run: |
+          echo "${{ secrets.SSL_CERTIFICATE }}" > ssl-certificate.crt
+          echo "${{ secrets.SSL_PRIVATE_KEY }}" > ssl-private-key.key
+
+      - name: Copy SSL certificate and key to server
+        run: |
+          ssh ${SSH_USERNAME}@${SSH_HOST} "mkdir -p ~/certs"
+          scp ssl-certificate.crt ${SSH_USERNAME}@${SSH_HOST}:~/certs/
+          scp ssl-private-key.key ${SSH_USERNAME}@${SSH_HOST}:~/certs/
+        env:
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
