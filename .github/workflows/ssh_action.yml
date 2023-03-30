@@ -24,11 +24,11 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             mkdir -p ~/cert
-            scp ~/cert/cert.cer ${SSH_USERNAME}@${SSH_HOST}:~/cert/
-            scp ~/cert/key.key ${SSH_USERNAME}@${SSH_HOST}:~/cert/
+            echo ${SSL_CERTIFICATE} > ~/cert/cert.cer
+            echo ${SSL_PRIVATE_KEY} > ~/cert/key.key
         env:
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSL_CERTIFICATE: ${{ secrets.SSL_CERTIFICATE }}
+          SSL_PRIVATE_KEY: ${{ secrets.SSL_PRIVATE_KEY }}
   
   run_ssh_script:
     runs-on: ubuntu-latest
