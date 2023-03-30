@@ -21,7 +21,6 @@ def main():
 
     reco.show()
     waikiki_info.show()
-    # zippys()
 
 
 
