@@ -8,12 +8,10 @@ services:
   nginx:
     image: nginx
     container_name: reverse-proxy
-    env_file:
-      - .env
     volumes:
-      - ../../alternative/nginx.conf:/etc/nginx/conf.d/default.conf
-      - ../../alternative/key.key:/root/ssl/key.key
-      - ../../alternative/cert.cer:/root/ssl/cert.cer
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ~/cert/key.key:/root/ssl/key.key
+      - ~/cert/cert.cer:/root/ssl/cert.cer
     ports:
       - "443:443"
       - "80:80"

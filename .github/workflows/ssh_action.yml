@@ -6,6 +6,33 @@ on:
       - main
 
 jobs:
+  copy-certificate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSL certificate
+        run: |
+          mkdir -p ~/cert
+          echo "${{ secrets.SSL_CERTIFICATE }}" > ~/cert/cert.cer
+          echo "${{ secrets.SSL_PRIVATE_KEY }}" > ~/cert/key.key
+      
+      - name: Copy SSL certificate and key to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            mkdir -p ~/cert;
+            touch ~/cert/cert.cer;
+            echo ${SSL_PRIVATE_KEY} >> ~/cert/cert.cer;
+            echo ${SSL_CERTIFICATE};
+            # echo ${SSL_CERTIFICATE} > ~/cert/cert.cer
+            # echo ${SSL_PRIVATE_KEY} > ~/cert/key.key
+        env:
+          SSL_CERTIFICATE: ${{ secrets.SSL_CERTIFICATE }}
+          SSL_PRIVATE_KEY: ${{ secrets.SSL_PRIVATE_KEY }}
+  
   run_ssh_script:
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +45,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          script:
+          script: |
            cd aloha-team-sai/;
            git pull;
            image_id=`docker images -q`;
@@ -28,5 +55,8 @@ jobs:
            docker run -d -p 8501:8501 --name aloha-container aloha-team-sai;
            docker image rm $image_id;
            echo "hello";
+
            
-           
+        # env:
+        #   SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+        #   SSH_HOST: ${{ secrets.SSH_HOST }}
