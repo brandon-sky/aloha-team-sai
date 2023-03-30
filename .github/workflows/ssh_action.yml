@@ -32,21 +32,43 @@ jobs:
   copy-certificate:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up SSH connection
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_KEY }}
-
       - name: Set up SSL certificate
         run: |
-          echo "${{ secrets.SSL_CERTIFICATE }}" | base64 -d  > ssl-certificate.crt
-          echo "${{ secrets.SSL_PRIVATE_KEY }}" | base64 -d  > ssl-private-key.key
-
+          echo "${{ secrets.SSL_CERTIFICATE }}" | base64 -d > ssl-certificate.crt
+          echo "${{ secrets.SSL_PRIVATE_KEY }}" | base64 -d > ssl-private-key.key
+      
       - name: Copy SSL certificate and key to server
-        run: |
-          ssh ${SSH_USERNAME}@${SSH_HOST} "mkdir -p ~/certs"
-          scp ssl-certificate.crt ${SSH_USERNAME}@${SSH_HOST}:~/certs/
-          scp ssl-private-key.key ${SSH_USERNAME}@${SSH_HOST}:~/certs/
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            mkdir -p ~/certs
+            scp ssl-certificate.crt ${SSH_USERNAME}@${SSH_HOST}:~/certs/
+            scp ssl-private-key.key ${SSH_USERNAME}@${SSH_HOST}:~/certs/
         env:
           SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
+  # copy-certificate:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Set up SSH connection
+  #       uses: webfactory/ssh-agent@v0.7.0
+  #       with:
+  #         ssh-private-key: ${{ secrets.SSH_KEY }}
+
+  #     - name: Set up SSL certificate
+  #       run: |
+  #         echo "${{ secrets.SSL_CERTIFICATE }}" | base64 -d  > ssl-certificate.crt
+  #         echo "${{ secrets.SSL_PRIVATE_KEY }}" | base64 -d  > ssl-private-key.key
+
+  #     - name: Copy SSL certificate and key to server
+  #       run: |
+  #         ssh ${SSH_USERNAME}@${SSH_HOST} "mkdir -p ~/certs"
+  #         scp ssl-certificate.crt ${SSH_USERNAME}@${SSH_HOST}:~/certs/
+  #         scp ssl-private-key.key ${SSH_USERNAME}@${SSH_HOST}:~/certs/
+  #       env:
+  #         SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+  #         SSH_HOST: ${{ secrets.SSH_HOST }}
