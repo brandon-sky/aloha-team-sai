@@ -6,34 +6,7 @@ on:
       - main
 
 jobs:
-  copy-certificate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up SSL certificate
-        run: |
-          mkdir -p ~/cert
-          echo "${{ secrets.SSL_CERTIFICATE }}" > ~/cert/cert.cer
-          echo "${{ secrets.SSL_PRIVATE_KEY }}" > ~/cert/key.key
-      
-      - name: Copy SSL certificate and key to server
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            mkdir -p ~/cert;
-            touch ~/cert/cert.cer;
-            echo ${SSL_PRIVATE_KEY} >> ~/cert/cert.cer;
-            echo ${SSL_CERTIFICATE};
-            # echo ${SSL_CERTIFICATE} > ~/cert/cert.cer
-            # echo ${SSL_PRIVATE_KEY} > ~/cert/key.key
-        env:
-          SSL_CERTIFICATE: ${{ secrets.SSL_CERTIFICATE }}
-          SSL_PRIVATE_KEY: ${{ secrets.SSL_PRIVATE_KEY }}
-  
-  run_ssh_script:
+  deploy application:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -49,8 +22,8 @@ jobs:
            cd aloha-team-sai/;
            git pull;
 
-          #  docker-compose down;
-          #  docker-compose up -d;
+           docker-compose down;
+           docker-compose up -d;
           #  image_id=`docker images -q`;
           #  docker build -t aloha-team-sai .;
           #  docker container stop aloha-container;
