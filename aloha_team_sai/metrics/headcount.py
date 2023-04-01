@@ -1,15 +1,15 @@
 import streamlit as st
 
 # Define the presence on O'ahu, Maui and Kauai
-oahu_presence = 0
+oahu_presence = 2
 maui_presence = 0
-kauai_presence = 2
-big_presence = 0
+kauai_presence = 0
+big_presence = 2
 
-oahu_delta = 0
+oahu_delta = 2
 maui_delta = 0
-kauai_delta = 2
-big_delta = 0
+kauai_delta = -2
+big_delta = 2
 
 
 def HeadCounter():

@@ -11,3 +11,5 @@ In der Nähe von Sandy Beach befindet sich der Leuchtturm Makapu'u Point. Dieser
 Makapu'u Point Leuchtturm ist bekannt für seine atemberaubende Aussicht auf die umliegende Landschaft. Vom Leuchtturm aus kann man die klaren blauen Gewässer des Pazifischen Ozeans sowie die Küstenlinie von Oahu bewundern. Es gibt auch Wanderwege in der Umgebung des Leuchtturms, die zu noch spektakuläreren Aussichtspunkten führen.
 
 Der Leuchtturm ist nicht für die Öffentlichkeit zugänglich, aber es gibt einen Parkplatz in der Nähe, von dem aus man einen guten Blick auf den Turm hat. Der Parkplatz ist auch der Ausgangspunkt für Wanderungen in der Umgebung.
+
+Zusammen Zeit am Sandy's Beach zu verbringen, ist eine großartige Möglichkeit, um die Schönheit von O'ahu zu genießen, die Vergangenheit und Kultur von Hawaii kennenzulernen, neue Freundschaften zu knüpfen und die Hochzeitsgesellschaft vor der eigentlichen Hochzeit besser kennenzulernen.

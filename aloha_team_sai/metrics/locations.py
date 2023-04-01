@@ -1,8 +1,7 @@
 import folium
-import streamlit as st
 import pandas as pd
 
-from streamlit_folium import st_folium, folium_static
+from streamlit_folium import st_folium
 
 PATH = "metrics/locations.csv"
 
@@ -26,6 +25,6 @@ def MapInformation():
             icon=icon
             ).add_to(hawaii_map)
 
-    st_data = st_folium(hawaii_map, width=700)
+    st_folium(hawaii_map, width=700)
     return 
 
