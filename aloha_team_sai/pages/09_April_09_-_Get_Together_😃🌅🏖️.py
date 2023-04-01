@@ -1,30 +1,23 @@
 import streamlit as st
 from metrics.meta import meta_info
 
-def waimea():
-    with open("texts/09_waimea.md", "r") as file:
-        text = file.read()
-
-    st.header("Get Together 😃🌅🏖️")
-    st.info("Wir treffen uns alle am Sunset Beach")
-    with st.expander("Empfehlung"):
-        st.markdown("""
-        #### Essen
-        - 🦐 Giovanni Shrimp Truck 
-        
-        #### Landschaft/Aktivitäten
-        - 🏖️ Sunset Beach  
-
-
-        """)
-    st.image("images/sunset_beach.jpg", caption="Sunset Beach.")
-    st.markdown(body=text)
-    st.image("images/food_garlic_shrimp.jpg", caption="Giovanni's Shrimp Truck")
-    return
+from data. SchedulePage import ScheduleElement, RecommendBar
 
 def main():
     meta_info()
-    waimea()
+    st.header("Get together at Sandy's 🏄‍♂️🌭🏖️")
+    st.info("Lasst uns gemeinsam den Tag verbringen.")
+    info = ScheduleElement(text_path="texts/09_sandys.md", image_path="images/sandys_2.jpg", caption="Sandy Beach.")
+    reco = RecommendBar(
+        food=[("🌭", "Hot Dogs"),
+              ("🏖️","Sandy Beach"),
+              ("📷","Lighthouse Makapu'u") ],
+        actions=[("🏖️ ", "Waimea Beach ")]
+    )
+    reco.show()
+    info.show()
+    st.image("images/sandys.jpg", caption="Die Gang.")
+    st.image("images/hotdog.png", caption="Auch er konnte nicht das Preis/Leistungs-Verhältnis glauben.")
     return 
 
 if __name__ == "__main__":
