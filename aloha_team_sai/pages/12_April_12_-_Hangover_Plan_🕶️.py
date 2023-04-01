@@ -1,31 +1,30 @@
 import streamlit as st
+
+from data.SchedulePage import ScheduleElement, RecommendBar
 from metrics.meta import meta_info
 
-def kailua():
-    with open("texts/12_kailua.md", "r") as file:
-        text = file.read()
-
-    st.header("The Hangover Plan 🕶️")
-    st.info("Hangover Plan: Gutes Frühstück, strahlende Sonne, leckeres Eis und eine tolle Aussicht")
-    with st.expander("Empfehlung"):
-        st.markdown("""
-        #### Essen
-        - 🥞😊 Macademia Nut Panecakes 
-        - 🍨🌈 Shave Ice
-        
-        #### Landschaft/Aktivitäten
-        - 🏖️ Kailua Beach Park 
-        - 🥾 Pillbox Hike
-        """)
-    st.image("images/kaili.jpg", caption="Easy day at Kailua Beach.")
-    st.markdown(body=text)
-    st.image("images/shave_ice.jpg", caption="Delicious shave ice.")
-    return
 
 def main():
     meta_info()
-    kailua()
-    return 
+    st.header("The Hangover Plan 🕶️")
+    st.info(
+        "Hangover Plan: Gutes Frühstück, strahlende Sonne, leckeres Eis und eine tolle Aussicht"
+    )
+
+    reco = RecommendBar(
+        food=[("🥞😊", "Macademia Nut Panecakes"), ("🍨🌈", "Shave Ice")],
+        actions=[("🏖️", "Kailua Beach Park"), ("🥾", "Pillbox Hike")],
+    )
+    reco.show()
+    info = ScheduleElement(
+        text_path="texts/12_kailua.md",
+        image_path="images/pillbox_2.jpg",
+        caption="Easy day in Kailua.",
+    )
+    info.show()
+    st.image("images/shave_ice.jpg", caption="Delicious shave ice.")
+    st.image("images/kaili.jpg", caption="Easy day at Kailua Beach.")
+
 
 if __name__ == "__main__":
     main()
