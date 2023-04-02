@@ -1,0 +1,7 @@
+Heute ist unser letzter Tag auf Big Island und es wird ein bittersüßer Tag für uns sein. Wir werden gegen Mittag uns von meiner Familie verabschieden. Wir werden uns an den gemeinsamen Momenten erfreuen, die wir zusammen verbracht haben, und uns an all die schönen Erinnerungen erinnern, die wir zusammen geschaffen haben.
+
+Danach werden wir zum Flughafen fahren und unseren Rückflug nach O'ahu nehmen. Nachdem wir in O'ahu angekommen sind, werden wir uns in unserer Unterkunft frisch machen und uns auf den Weg machen, um unseren letzten Abend gemeinsam in Waikiki zu verbringen. Wir werden uns an einem schönen Ort am Strand entspannen und die Aussicht auf das Meer genießen.
+
+Wir werden uns bei einem köstlichen Abendessen verwöhnen lassen und uns über all die wundervollen Erlebnisse unterhalten, die wir auf unserer Reise zusammen erlebt haben. Wir werden uns an unsere Zeit auf Hawaii erinnern und unsere Gedanken an all die Dinge schweifen lassen, die wir gemeinsam erlebt haben.
+
+Wir werden uns an diesem letzten Abend auf Hawaii von einander verabschieden und uns auf unsere nächsten Abenteuer und Reisen (Portugal) freuen, die wir gemeinsam erleben werden. Es war eine unvergessliche Reise und wir werden uns für immer an diese wunderschöne Zeit erinnern.
