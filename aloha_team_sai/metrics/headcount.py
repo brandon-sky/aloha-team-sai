@@ -1,15 +1,15 @@
 import streamlit as st
 
 # Define the presence on O'ahu, Maui and Kauai
-oahu_presence = 2
-maui_presence = 0
+oahu_presence = 2 + 2 + 3 + 2 + 2 + 3
+maui_presence = 2
 kauai_presence = 0
-big_presence = 2
+big_presence = 0
 
-oahu_delta = 2
+oahu_delta = 9
 maui_delta = 0
-kauai_delta = -2
-big_delta = 2
+kauai_delta = 0
+big_delta = -2
 
 
 def HeadCounter():
@@ -23,6 +23,6 @@ def HeadCounter():
         st.metric(label="Maui", value=maui_presence, delta=maui_delta)
     with col4:
         st.metric(label="Big Island", value=big_presence, delta=big_delta)
-    
+
     st.image("images/map_islands.jpg")
-    return 
+    return
