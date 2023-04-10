@@ -11,5 +11,5 @@ def meta_info(side_bar: bool = False):
         config["initial_sidebar_state"] = "expanded"
 
     st.set_page_config(**config)
-    st.warning("Update: Brandon landet erst am 8.April auf Hawai'i.")
+    st.info("Info: Shuttle-Transport-Abholpunkte prüfen.")
     return
